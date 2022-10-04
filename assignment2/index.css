@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(65, 63, 63);
+    color: white;
+}
+.headers{
+    width: 100vw;
+
+}
+h1,h2,h3{
+    color: rgb(115, 183, 239);
+}
+.h-about{
+    font-size: 500%;
+}
+.yellow-text{
+    color: yellow;
+}
+.movie-link{
+    color: red;
+}
+.movie-link:hover{
+    color: green;
+}
+.modes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.left{
+    flex: 6;
+}
+.right{
+    flex: 6;
+    justify-content: center;
+}
+.imgs{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
