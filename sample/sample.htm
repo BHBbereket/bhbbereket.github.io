@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sample.css">
+    <title>sample</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 10px;
+            grid-auto-rows: minmax(200px,auto);
+            grid-auto-columns: minmax(150px,auto);
+            /* grid-column: minmax(100px,auto); */
+
+        }
+        .wrapper>div{
+            background-color: #ddd;
+            overflow-y: scroll;
+        }
+        .wrapper>div:nth-child(odd){
+            background-color: #eee;
+        }
+        .i1{
+            background-color: rgb(225, 71, 71);
+            grid-area: 1/1/2/2;
+
+        }
+        .i2{
+            background-color: rgb(27, 27, 27);
+            color: white;
+           grid-area: 1/2/3/3;
+        }
+        .i5{
+            background-color: rgb(249, 242, 242);
+            grid-area: 2/2/2/2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="i1">
+            a
+            <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Adipisci mollitia modi magni accusamus sunt voluptate dolorum ex sequi
+            quaerat quod laudantium voluptatem repellat, earum, ipsum, quam tempora tempore! Veniam,
+            vouptatem? -->
+        </div>
+        <div class="i2">
+            b
+            <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Unde quae ipsum totam qui earum perspiciatis accusantium blanditiis animi reprehenderit
+            voluptas corrupti aliquam,
+            dolor quo illum esse dolorum hic ut illo! -->
+        </div>
+        <div class="i3">
+            c
+            <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Unde quae ipsum totam qui earum perspiciatis accusantium blanditiis animi reprehenderit
+            voluptas corrupti aliquam,
+            dolor quo illum esse dolorum hic ut illo! -->
+        </div>
+        <!-- <div class="i4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Unde quae ipsum totam qui earum perspiciatis accusantium blanditiis animi reprehenderit
+            voluptas corrupti aliquam,
+            dolor quo illum esse dolorum hic ut illo!
+        </div> -->
+        <!-- <div class="i5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Unde quae ipsum totam qui earum perspiciatis accusantium blanditiis animi reprehenderit
+            voluptas corrupti aliquam,
+            dolor quo illum esse dolorum hic ut illo!
+        </div>
+        <div class="i6">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Unde quae ipsum totam qui earum perspiciatis accusantium blanditiis animi reprehenderit
+            voluptas corrupti aliquam,
+            dolor quo illum esse dolorum hic ut illo!
+        </div> -->
+    </div>
+</body>
+
+</html>
